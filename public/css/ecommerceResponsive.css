@@ -1,0 +1,239 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 3000px) {
+
+    .mobile-menu{
+        display: none;
+    }
+
+}
+
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .mobile-menu{
+        display: none;
+    }
+
+}
+
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .mobile-menu{
+        display: none;
+    }
+
+
+}
+
+
+
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+
+    .icon-area .icon a {
+        margin: 0 8px;
+    }
+
+    .icon h2{
+        font-size: 13px;
+    }
+
+    .icon span{
+        font-size: 7px;
+    }
+
+
+    .header-menu{
+        display: none;
+    }
+
+    .header-area{
+        display: none;
+    }
+
+    .nav-item{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        background: #006b39;
+        color: aliceblue;
+        box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    }
+
+    .carousel-inner img{
+        width: 100%;
+    }
+
+    .single-card {
+        width: 230px;
+        margin: 9px;
+        height: 385px;
+        border-radius: 10px;
+    }
+
+    .single-cards {
+        width: 230px;
+        margin: 9px;
+        height: 385px;
+        border-radius: 10px;
+    }
+
+    .info {
+        padding: 8px;
+    }
+
+    .price-discount {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .custom-btn .btn-11 {
+        width: 458px;
+        height: 77px;
+    }
+
+    .info h3 {
+        font-size: 12px;
+    }
+
+    .info h2 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .custom-btn .btn-10 a {
+        width: 180px;
+        height: 34px;
+    }
+
+    .image-item img{
+        width: 100%;
+    }
+    bodys {
+
+        min-height: 0vh;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 460px;
+        height: auto;
+    }
+
+    .new_footer_top .company_widget p {
+        margin-top: 12px;
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+
+    .footer-icon img {
+        width: 90px;
+    }
+
+    .new_footer_top .footer_bg {
+        height: 250px;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .heading-secondarys {
+        margin-bottom: 15px;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .heading-primary {
+        font-size: 24px;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .description {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        margin-left: 0;
+        text-align: center;
+    }
+    .price-discounts {
+
+        margin-bottom: 5px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .price-originals {
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    .btn-2 {
+        width: 225px;
+
+        top: 26px;
+        left: 15px;
+        text-align: center;
+    }
+    form input {
+        padding: 11px 18px 13px 32px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #002c3e;
+        font-weight: 600;
+        margin-left: 3px;
+        width: 124px;
+        margin-top: 3px;
+    }
+
+    .youtube-info {
+        margin-bottom: 20px;
+        margin-top: 13px;
+        font-weight: 600;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .product-item iframe {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .product-info h1 {
+
+        font-weight: 700;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    .product-description img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-description {
+	width: 100%;
+
+}
+
+.comment textarea{
+	min-height: 100px;
+	width: 100%;
+}
+
+
+
+
+
+
+}
