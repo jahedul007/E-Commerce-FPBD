@@ -102,6 +102,10 @@ Route::get('/furnitureParts', [HomeController::class,'furnitureParts'])->name('h
 
 
 
+Route::get('/others', [HomeController::class,'others'])->name('home.others');
+
+
+
 
 
 

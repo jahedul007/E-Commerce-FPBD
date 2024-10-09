@@ -148,14 +148,6 @@
                                     class="option1">Buy Now</a></div>
                             <!-- <div class="btn-10"></div> -->
                         </div>
-<!-- 
-                        {{-- <button class="btn-17">
-                                <span class="text-container">
-                                    <span class="text">
-                                        <a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy Now</a>
-                        </span>
-                        </span>
-                        </button> --}} -->
                     </div>
                 </div>
             </div>
@@ -229,14 +221,6 @@
                                     class="option1">Buy Now</a></div>
                             <!-- <div class="btn-10"></div> -->
                         </div>
-
-                        <!-- {{-- <button class="btn-17">
-                            <span class="text-container">
-                                <span class="text">
-                                    <a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy Now</a>
-                        </span>
-                        </span>
-                        </button> --}} -->
                     </div>
                 </div>
             </div>
@@ -247,7 +231,7 @@
 </div>
 
 <!-- why section -->
-@include('home.why')
+<!-- @include('home.why') -->
 <!-- end why section -->
 
 

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
+  <h1 style="text-align: center; margin-top:50px; color: #006b39;">Customer Reviews</h1>
   <bodys>
     <div class="container">
       <div class="slider-wrapper">

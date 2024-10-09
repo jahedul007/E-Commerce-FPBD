@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title', 'All Products')
+@section('title', 'Others Products')
 
 @section('content')
 
@@ -14,15 +14,6 @@
             <h2>
                All <span class="red">Products in One Place</span>
             </h2>
-            <br> <br>
-            <div>
-              <form action="{{ route('home.productSearch') }}" method="GET">
-                  @csrf
-
-                  <input style="width:450px; text-align:center;" type="text" name="search" placeholder="Search for anything">
-                  <input type="submit" value="search">
-              </form>
-            </div>
          </div>
 
 
@@ -30,7 +21,7 @@
 
          <div class="row">
             @foreach ($products as $product)
-            <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
 
                 <div class="single-card">
                     <div class="img-area">

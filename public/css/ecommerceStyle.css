@@ -2043,6 +2043,59 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 
 
+/* btn-me */
+
+.btn-my {
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 19.5px;
+  text-decoration: none solid rgb(255, 255, 255);
+  background-attachment: scroll;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  color: rgb(255, 255, 255);
+  height: 35px;
+  width: 160px;
+  border-top: 1.11111px solid rgba(255, 255, 255, 0.1);
+  border-right: 0px none rgb(255, 255, 255);
+  border-bottom: 1.11111px solid rgba(255, 255, 255, 0.1);
+  border-left: 0px none rgb(255, 255, 255);
+  padding: 10px;
+  top: 0px;
+  bottom: 45px;
+  right: 293.993px;
+  left: 0px;
+  float: none;
+  display: flex;
+  list-style-image: none;
+  list-style-type: disc;
+  list-style-position: outside;
+  border-collapse: separate;
+  table-layout: auto;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  visibility: visible;
+  transform: none;
+  transition: 0.5s;
+  outline: rgb(255, 255, 255) dashed 0px;
+  outline-offset: 0.989583px;
+  box-sizing: border-box;
+  resize: none;
+  text-shadow: none;
+  text-overflow: clip;
+  word-wrap: normal;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 15px 0px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: 0 auto;
+}
 
 
 
@@ -2061,14 +2114,10 @@ review slider strat */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: #f1f4fd;
+     margin-top: 35px;
+     background: #f1f4fd;
   }
 
-  /* .container {
-    max-width: 1200px;
-    width: 95%;
-  } */
 
   .slider-wrapper {
     position: relative;

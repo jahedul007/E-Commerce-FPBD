@@ -1143,5 +1143,35 @@ public function furnitureParts()
 }
 
 
+public function others()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Accessories & Parts";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.others', $viewBag);
+}
+
+
+
+// public function others()
+// {
+//     // Assuming you have a Product model and a 'furniture' category
+//     $products = Product::where('category', 'furniture')->paginate(10);
+
+//     return view('home.others', compact('products'));
+// }
+
+
 
 }

@@ -75,15 +75,6 @@
                     <div class="btn-11"></div>
                 </div>
 
-                            {{-- <button class="btn-17">
-                                <span class="text-container">
-                                    <span class="text">
-                                        <a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy
-                                            Now</a>
-                                    </span>
-                                </span>
-                            </button> --}}
-
                         </div>
                     </div>
                 </div>

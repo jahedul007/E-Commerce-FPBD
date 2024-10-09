@@ -4,6 +4,9 @@
     .mobile-menu{
         display: none;
     }
+    .loginstyles{
+        display: none;
+    }
 
 }
 
@@ -13,6 +16,9 @@
 @media (min-width: 992px) and (max-width: 1200px) {
 
     .mobile-menu{
+        display: none;
+    }
+    .loginstyles{
         display: none;
     }
 
@@ -30,13 +36,38 @@
     .mobile-menu{
         display: none;
     }
+    .loginstyles{
+        display: none;
+    }
+
     .icon-areas h2{
         font-size: 18px;
         font-weight: 700;
     }
 
+
+
+    .containers-btn a {
+        width: 220px;
+        height: 58px;
+    }
+    .slider img {
+        height: auto;
+        width: auto;
+    }
+
     .single-card {
-        width: 266px;
+        width: 200px;
+        margin: 5px;
+
+    }
+
+    .custom-btn .btn-11 a {
+        width: 140px;
+    }
+
+    .custom-btn {
+        width: 463px;
     }
 
 
@@ -47,6 +78,10 @@
 
 /* SM Small Device :550px. */
 @media only screen and (min-width: 350px) and (max-width: 767px) {
+
+    .loginstyle{
+        display: none;
+    }
 
     .icon-area .icon a {
         margin: 0 8px;
@@ -83,17 +118,21 @@
         width: 100%;
     }
 
+    .img-area {
+        height: 187px;
+    }
+
     .single-card {
         width: auto;
         /* margin: 0; */
-        height: 385px;
+        height: 326px;
         border-radius: 10px;
     }
 
     .single-cards {
         width: auto;
         /* margin: 0; */
-        height: 385px;
+        height: 326px;
         border-radius: 10px;
     }
 
@@ -126,15 +165,12 @@
 
     .custom-btn .btn-11 a {
 
-        width: 146px;
+        width: 130px;
    
     }
 
-    .custom-btn .btn-10 {
-        /* width: 454px; */
-    }
     .custom-btn .btn-10 a {
-        width: 150px;
+        width: 130px;
         height: 34px;
     }
 
