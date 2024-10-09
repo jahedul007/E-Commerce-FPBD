@@ -74,8 +74,32 @@ Route::get('/coupleProduct', [HomeController::class, 'coupleProduct'])->name('ho
 
 // Slider part
 
-Route::get('/slider', [HomeController::class,'slider'])->name('home.slider');
-Route::get('/reviewSlider', [HomeController::class,'reviewSlider'])->name('home.reviewSlider');
+Route::get('/slider', [HomeController::class, 'slider'])->name('home.slider');
+Route::get('/reviewSlider', [HomeController::class, 'reviewSlider'])->name('home.reviewSlider');
+
+
+Route::get('/furniture', [HomeController::class,'furniture'])->name('home.furniture');
+Route::get('/furnitureTable', [HomeController::class,'furnitureTable'])->name('home.furnitureTable');
+Route::get('/furnitureBed', [HomeController::class,'furnitureBed'])->name('home.furnitureBed');
+Route::get('/furnitureAlmirah', [HomeController::class,'furnitureAlmirah'])->name('home.furnitureAlmirah');
+Route::get('/furnitureStool', [HomeController::class,'furnitureStool'])->name('home.furnitureStool');
+Route::get('/furnitureBookShelf', [HomeController::class,'furnitureBookShelf'])->name('home.furnitureBookShelf');
+Route::get('/furnitureChair', [HomeController::class,'furnitureChair'])->name('home.furnitureChair');
+Route::get('/furnitureCarftDecor', [HomeController::class,'furnitureCarftDecor'])->name('home.furnitureCarftDecor');
+Route::get('/furnitureShowcase', [HomeController::class,'furnitureShowcase'])->name('home.furnitureShowcase');
+Route::get('/furnitureWardrobe', [HomeController::class,'furnitureWardrobe'])->name('home.furnitureWardrobe');
+Route::get('/furnitureOvenRack', [HomeController::class,'furnitureOvenRack'])->name('home.furnitureOvenRack');
+Route::get('/furnitureRockingChair', [HomeController::class,'furnitureRockingChair'])->name('home.furnitureRockingChair');
+Route::get('/furnitureTeaTable', [HomeController::class,'furnitureTeaTable'])->name('home.furnitureTeaTable');
+Route::get('/furnitureAlna', [HomeController::class,'furnitureAlna'])->name('home.furnitureAlna');
+Route::get('/furnitureDressingTable', [HomeController::class,'furnitureDressingTable'])->name('home.furnitureDressingTable');
+Route::get('/furnitureTvTrolley', [HomeController::class,'furnitureTvTrolley'])->name('home.furnitureTvTrolley');
+Route::get('/furnitureSofaSet', [HomeController::class,'furnitureSofaSet'])->name('home.furnitureSofaSet');
+Route::get('/furnitureShowRack', [HomeController::class,'furnitureShowRack'])->name('home.furnitureShowRack');
+Route::get('/furnitureDivan', [HomeController::class,'furnitureDivan'])->name('home.furnitureDivan');
+Route::get('/furnitureKitchenCabinet', [HomeController::class,'furnitureKitchenCabinet'])->name('home.furnitureKitchenCabinet');
+Route::get('/furnitureParts', [HomeController::class,'furnitureParts'])->name('home.furnitureParts');
+
 
 
 

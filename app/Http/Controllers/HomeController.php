@@ -736,4 +736,412 @@ public function girlsProduct()
 // }
 
 
+
+public function furniture()
+{
+    // Assuming you have a Product model and a 'furniture' category
+    $products = Product::where('category', 'furniture')->paginate(10);
+
+    return view('home.furniture', compact('products'));
+}
+
+
+public function furnitureTable()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Table";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureTable', $viewBag);
+}
+
+
+public function furnitureBed()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Bed";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureBed', $viewBag);
+}
+
+
+public function furnitureAlmirah()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Almirah";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureAlmirah', $viewBag);
+}
+
+
+public function furnitureStool()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Stool";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureStool', $viewBag);
+}
+
+
+public function furnitureBookShelf()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Bool Shelf";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureBookShelf', $viewBag);
+}
+
+
+public function furnitureChair()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Chair";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureChair', $viewBag);
+}
+
+
+public function furnitureCarftDecor()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Carft & Decor";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureCarftDecor', $viewBag);
+}
+
+
+public function furnitureShowcase()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Showcase";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureShowcase', $viewBag);
+}
+
+
+public function furnitureWardrobe()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Wardrobe";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureWardrobe', $viewBag);
+}
+
+
+public function furnitureOvenRack()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Oven Rack";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureOvenRack', $viewBag);
+}
+
+
+public function furnitureRockingChair()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Rocking Chair";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureRockingChair', $viewBag);
+}
+
+
+public function furnitureTeaTable()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Tea Table";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureTeaTable', $viewBag);
+}
+
+public function furnitureAlna()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Alna";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureAlna', $viewBag);
+}
+
+public function furnitureDressingTable()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Dressing Table";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureDressingTable', $viewBag);
+}
+
+
+public function furnitureTvTrolley()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Tv Trolley";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureTvTrolley', $viewBag);
+}
+
+
+public function furnitureSofaSet()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Sofa Set";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureSofaSet', $viewBag);
+}
+
+
+public function furnitureShowRack()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Show Rack";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureShowRack', $viewBag);
+}
+
+
+public function furnitureDivan()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Divan";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureDivan', $viewBag);
+}
+
+
+public function furnitureKitchenCabinet()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Kitchen Cabinet";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureKitchenCabinet', $viewBag);
+}
+
+public function furnitureParts()
+{
+    // Hardcode the category to "Couple's Ring"
+    $category = "Accessories & Parts";
+
+    // Fetch products for the "Couple's Ring" category and paginate them
+    $viewBag['products'] = Product::where('category', $category)->paginate(8);
+
+    // Optionally, fetch all categories if needed
+    $viewBag['categories'] = Category::all();
+
+    // Fetch latest comments and replies if needed
+    $viewBag['comment'] = Comment::latest()->get();
+    $viewBag['reply'] = Reply::latest()->get();
+
+    // Return the view with all relevant data
+    return view('home.furnitureParts', $viewBag);
+}
+
+
+
 }
