@@ -269,7 +269,7 @@ body {
 }
 .header-menu ul li{
     list-style: none;
-    padding: 15px 0px;
+    padding: 18px 0px;
 }
 
 .header-menu ul li:hover{
@@ -285,7 +285,7 @@ body {
     /* font-family: "Fredoka"; */
     text-decoration: none;
     color: rgb(6 95 70);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -880,7 +880,7 @@ body {
 
 
 .custom-btn {
-	width: 1000px;
+	width: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -957,7 +957,7 @@ body {
 
 /* btn-11 */
 .custom-btn {
-	width: 1000px;
+	width: 500px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -1101,7 +1101,7 @@ body {
   .two {
 
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #E48A3C;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#E48A3C), to(rgba(222, 135, 61, 0.24))),
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E48A3C), to(rgba(222, 135, 61, 0.24)));
     background-image: linear-gradient(to bottom, #E48A3C, rgba(222, 135, 61, 0.24));
   }
   .two:hover {
@@ -1131,8 +1131,6 @@ body {
 
   /* another btn  */
 
-
-  /* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap"); */
 
   @import url('htpps://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
   .container-btn{
@@ -1208,6 +1206,85 @@ body {
       transform: skew(25deg)
   }
 
+
+  /* another btn  */
+
+
+
+  @import url('htpps://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+  .containers-btn{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .containers-btn a{
+  position: relative;
+    width: 305px;
+    height: 60px;
+    display: inline-block;
+    background: #fff;
+    margin: 5px;
+  }
+  .containers-btn a:before,
+  .containers-btn a:after
+  {
+  content:'';
+    position: absolute;
+    inset: 0;
+    transition: 0.5s;
+    background: #f00
+  }
+  .containers-btn a:nth-child(1):before,
+  .containers-btn a:nth-child(1):after
+  {
+   background: linear-gradient(45deg, #00ccff, #0e1538, #d400d4)
+  }
+  .containers-btn a:nth-child(2):before,
+  .containers-btn a:nth-child(2):after
+  {
+    background: linear-gradient(45deg, #f0075b, #0e1538, #1aff22);
+  }
+  .containers-btn a:hover:before
+  {
+    inset: -3px;
+  }
+  .containers-btn a:hover:after
+  {
+    inset: -3px;
+    filter: blur(10px);
+  }
+  .containers-btn a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    display: inline-block;
+    background: rgb(6 95 70);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid rgb(0, 88, 63);
+    overflow: hidden;
+    text-align: center;
+  }
+  .containers-btn a span::before{
+  content:'';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.075);
+      transform: skew(25deg)
+  }
 
 /* Button b-17 */
 
@@ -1897,12 +1974,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 review slider strat */
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   bodys {
     display: flex;
     align-items: center;
@@ -1911,10 +1982,10 @@ review slider strat */
     background: #f1f4fd;
   }
 
-  .container {
+  /* .container {
     max-width: 1200px;
     width: 95%;
-  }
+  } */
 
   .slider-wrapper {
     position: relative;
@@ -2114,7 +2185,24 @@ review slider end */
 
 .slider img{
     height: 485px;
-    width: 805px;
+    width: 1020px;
+}
+
+.info-menu h2{
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #006b39;
+  border-bottom: 2px solid #006b39;
+  font-weight: 700;
+}
+
+.info-menu h3{
+  font-size: 15px;
+
+  text-align: center;
+  color: #006b39;
 }
 
 

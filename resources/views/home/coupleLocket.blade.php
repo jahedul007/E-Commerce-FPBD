@@ -14,7 +14,7 @@
 
         <div class="row">
             @foreach ($products as $product)
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-sm-4 col-md-3">
                 <div class="single-card">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img src="/product/{{ $product->image }}" alt=""></a>
