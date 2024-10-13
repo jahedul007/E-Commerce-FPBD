@@ -3,10 +3,10 @@
         <!-- <div class="row"> -->
         <div class="row">
             <div class="col-12 d-flex">
-                <div class="col-md-7 header-info d-flex mt-3 mb-3 justify-content-between">
+                <div class="col-md-6 header-info d-flex mt-3 mb-3 justify-content-between">
                     <div class="icon-areas">
                         <div class="icon">
-                            <a href="#"><i class="fa fa-phone"></i></a>
+                            <a href="tel:+8801627005005"><i class="fa fa-phone"></i></a>
                             <h2> :01627005005 <span>(Feel free ask any Question)</span></h2>
                         </div>
                     </div>
@@ -37,22 +37,25 @@
                         </li>
                     </div>
                 </div>
-                <div class="col-md-5 mt-3">
+                <div class="col-md-6 mt-3">
                     <div class="icon-area">
                         <div class="icon">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/fpbd007"><i class="fa fa-facebook"></i></a>
                         </div>
                         <div class="icon">
-                            <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="https://m.me/fpbd007"><i class="fa-brands fa-facebook-messenger"></i></a>
                         </div>
                         <div class="icon">
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-youtube"></i></a>
                         </div>
                         <div class="icon">
+                            <a href="{{route('home')}}"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <!-- <div class="icon">
                             <a href="#"><i class="fa fa-info"></i></a>
-                        </div>
+                        </div> -->
                         <div class="icon">
-                            <a href="#"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://wa.me/01627005005?text=Assalamu Olaikum"><i class="fa fa-whatsapp"></i></a>
                         </div>
                     </div>
 
@@ -231,55 +234,82 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}"><i class="fa-solid fa-house-flag"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="{{ route('home.allProduct') }}"><i
+                        class="fa-solid fa-list"></i> ALL PRODUCTS</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="{{ route('home.mensProduct') }}" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            <i
+                                        class="fa-solid fa-person"></i> MEN'S CATEGORY
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.mensProduct') }}"><i
+                            class="fa-solid fa-person"></i> MEN'S ALL PRODUCTS</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.menBracelet', ['category' => urlencode("Men's Bracelet")]) }}"><i class="fa-regular fa-gem"></i> MEN'S
+                            BRACELET</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.menRing', ['category' => urlencode("Men's Ring")]) }}"><i class="fa-solid fa-ring"></i> MEN'S RING</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.menLocket', ['category' => urlencode("Men's Locket")]) }}"><i class="fa-solid fa-spray-can"></i> MEN'S LOCKET</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.menWatch', ['category' => urlencode("Men's Watch")]) }}"><i class="fa-regular fa-clock"></i> MEN'S WATCH</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="{{ route('home.girlsProduct') }}" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            <i
+                                        class="fa-solid fa-person-dress"></i> GIRL'S
+                                    CATEGORY
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.girlsProduct') }}"><i
+                            class="fa-solid fa-person-dress"></i> GIRL'S ALL PRODUCTS</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.girlRing', ['category' => urlencode("Girl's Ring")]) }}"><i class="fa-solid fa-ring"></i> GIRL'S RING</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.girlLocket', ['category' => urlencode("Girl's Locket")]) }}"><i class="fa-regular fa-gem"></i> GIRL'S LOCKET /
+                            NECKLACE</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.girlFullSet', ['category' => urlencode("Girl's Jewelry Set")]) }}"><i class="fa-solid fa-gem"></i> FULL SET JEWELRY</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.girlWatch', ['category' => urlencode("Girl's Watch")]) }}"><i class="fa-solid fa-clock"></i> GIRL'S WATCH</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.girlAnklet', ['category' => urlencode("Girl's Aklet")]) }}"><i class="fa-regular fa-gem"></i>
+                            ANKLET/PAYEL</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.girlEarring', ['category' => urlencode("Girl's Earring Set")]) }}"><i class="fa-solid fa-ear-deaf"></i> EARRING
+                            SET</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="{{ route('home.coupleProduct') }}" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            <i
+                                        class="fa-solid fa-children"></i> COUPLE PRODUCTS
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.coupleProduct') }}"><i
+                            class="fa-solid fa-children"></i> COUPLE ALL PRODUCTS</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.coupleRing', ['category' => urlencode('Couple Ring')]) }}"><i class="fa-solid fa-ring"></i> COUPLE RING</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.coupleBracelet', ['category' => urlencode('Couple Bracelets')]) }}"><i class="fa-regular fa-gem"></i> COUPLE
+                            BRACELETS</a></li>
+                            <li><a class="dropdown-item" href="{{ route('home.coupleLocket', ['category' => urlencode('Couple Locket')]) }}"><i class="fa-regular fa-gem"></i> COUPLE LOCKET /
+                            NECKLACE</a></li>
                         </ul>
                     </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-
-
-
-
-<div class="loginstyles">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home.furniture') }}"><i class="fa-solid fa-couch"></i> Furniture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home.others') }}"><i class="fa-brands fa-ethereum"></i> Others</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home.show_cart') }}"><i
+                        class="fa-solid fa-cart-arrow-down"></i> CART</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home.show_order') }}"><i
+                        class="fa-brands fa-jedi-order"></i> ORDER</a>
+                    </li>
+                    <li>
+                    <div class="loginstyles">
     <div class="d-flex" style="list-style: none; margin-left:33%; margin-bottom: 10px;">
         <li class="nav-link">
             <div class="logDesign">
@@ -306,3 +336,13 @@
     </li>
 </div>
 </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+

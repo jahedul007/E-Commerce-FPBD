@@ -13,7 +13,7 @@
 
             <div class="col-12 col-md-6">
 
-                <table class="table table-dark">
+                <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Product Title</th>

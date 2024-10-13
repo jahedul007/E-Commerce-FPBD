@@ -1145,8 +1145,6 @@ public function furnitureParts()
 
 public function others()
 {
-    // Hardcode the category to "Couple's Ring"
-    $category = "Accessories & Parts";
 
     // Fetch products for the "Couple's Ring" category and paginate them
     $viewBag['products'] = Product::where('category', $category)->paginate(8);
@@ -1154,12 +1152,28 @@ public function others()
     // Optionally, fetch all categories if needed
     $viewBag['categories'] = Category::all();
 
-    // Fetch latest comments and replies if needed
-    $viewBag['comment'] = Comment::latest()->get();
-    $viewBag['reply'] = Reply::latest()->get();
-
     // Return the view with all relevant data
     return view('home.others', $viewBag);
+}
+
+public function howToOrder()
+{
+    return view('home.howToOrder');
+}
+
+public function deliveryDhakaCity()
+{
+    return view('home.deliveryDhakaCity');
+}
+
+public function deliveryOutsideDhaka()
+{
+    return view('home.deliveryOutsideDhaka');
+}
+
+public function paymentMethod()
+{
+    return view('home.paymentMethod');
 }
 
 

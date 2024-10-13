@@ -7,6 +7,9 @@
     .loginstyles{
         display: none;
     }
+    .btn-my{
+        display: none;
+    }
 
 }
 
@@ -18,12 +21,46 @@
     .mobile-menu{
         display: none;
     }
+
+    .btn-my{
+        display: none;
+    }
+
     .loginstyles{
         display: none;
     }
 
     .single-card {
         width: 248px;
+    }
+
+    .slider img {
+        width: auto;
+    }
+
+    .containers-btn a {
+        width: 260px;
+    }
+
+    .single-cards {
+        width: auto;
+    }
+
+    .custom-btn .btn-10 a {
+        width: 160px;
+
+    }
+
+    .custom-btn .btn-10 {
+        width: 415px;
+    }
+    .custom-btn .btn-11 a {
+        width: 160px;
+
+    }
+
+    .furniture-btn a {
+        width: 225px;
     }
 
 }
@@ -36,6 +73,14 @@
     .mobile-menu{
         display: none;
     }
+
+    .single-card {
+        width: 100%;
+    }
+
+    .btn-my{
+        display: none;
+    }
     .loginstyles{
         display: none;
     }
@@ -45,21 +90,20 @@
         font-weight: 700;
     }
 
-
+    .single-cards {
+        width: 100%;
+    }
+    .custom-btn .btn-10 {
+        width: 425px;
+    }
 
     .containers-btn a {
         width: 220px;
         height: 58px;
     }
     .slider img {
-        height: auto;
+        height: 485px;
         width: auto;
-    }
-
-    .single-card {
-        width: 200px;
-        margin: 5px;
-
     }
 
     .custom-btn .btn-11 a {
@@ -68,6 +112,28 @@
 
     .custom-btn {
         width: 463px;
+    }
+
+    .header-icon a img {
+        width: 76px;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+
+    .furniture-btn a {
+        width: 175px;
+    }
+
+    /* .custom-btn .btn-11 {
+
+        width: 450px;
+
+    } */
+
+    .slider-wrapper .image-list .image-item {
+        width: 500px;
+        height: auto;
     }
 
 
@@ -80,6 +146,10 @@
 @media only screen and (min-width: 350px) and (max-width: 767px) {
 
     .loginstyle{
+        display: none;
+    }
+
+    .custom-btn{
         display: none;
     }
 
@@ -124,16 +194,17 @@
 
     .single-card {
         width: auto;
-        /* margin: 0; */
+        margin: 3px;
         height: 326px;
         border-radius: 10px;
     }
 
     .single-cards {
         width: auto;
-        /* margin: 0; */
+        margin: 3px;
         height: 326px;
         border-radius: 10px;
+        
     }
 
     .info {
@@ -198,7 +269,7 @@
     }
 
     .new_footer_top .footer_bg {
-        height: 250px;
+        height: 244px;
     }
 
     .main-img {
@@ -299,6 +370,17 @@
 
 .custom-btn{
     text-align: center;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+	width: 250px;
+	height: 75px;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+	width: 62px;
+	height: 75px;
+
 }
 
 

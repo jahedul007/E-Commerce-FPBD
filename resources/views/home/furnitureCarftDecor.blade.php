@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container-fulid">
     <div class="row">
         <div class="heading_container heading_center">
             <h2>
@@ -14,7 +14,7 @@
 
         <div class="row">
             @foreach ($products as $product)
-            <div class="col-6 col-sm-4 col-md-3">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                 <div class="single-card">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img src="/product/{{ $product->image }}" alt=""></a>
@@ -47,17 +47,11 @@
                             <h6 class="price-original">TK {{ $product->price }}</h6>
                         @endif
                         <div class="custom-btn">
-                            <div class="btn-11"><a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy Now</a></div>
-                            <div class="btn-11"></div>
-                        </div>
+                    <div class="btn-11"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a></div>
+                </div>
 
-                        {{-- <button class="btn-17">
-                            <span class="text-container">
-                                <span class="text">
-                                    <a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy Now</a>
-                                </span>
-                            </span>
-                        </button> --}}
+                    <div class="btn-my"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a></div>
+
                     </div>
                 </div>
             </div>

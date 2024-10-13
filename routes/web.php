@@ -104,6 +104,12 @@ Route::get('/furnitureParts', [HomeController::class,'furnitureParts'])->name('h
 
 Route::get('/others', [HomeController::class,'others'])->name('home.others');
 
+Route::get('/howToOrder', [HomeController::class,'howToOrder'])->name('home.howToOrder');
+Route::get('/deliveryDhakaCity', [HomeController::class,'deliveryDhakaCity'])->name('home.deliveryDhakaCity');
+Route::get('/deliveryOutsideDhaka', [HomeController::class,'deliveryOutsideDhaka'])->name('home.deliveryOutsideDhaka');
+Route::get('/paymentMethod', [HomeController::class,'paymentMethod'])->name('home.paymentMethod');
+
+
 
 
 

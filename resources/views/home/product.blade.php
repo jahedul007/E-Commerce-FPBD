@@ -19,7 +19,7 @@
 
         <div class="row">
             @foreach ($products as $product)
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
 
                     <div class="single-card">
                         <div class="img-area">
@@ -70,10 +70,12 @@
                             @endif
 
 
-                <div class="custom-btn">
-                    <div class="btn-11"><a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy Now</a></div>
-                    <div class="btn-11"></div>
+                            <div class="custom-btn">
+                    <div class="btn-11"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a></div>
                 </div>
+
+                    <div class="btn-my"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a></div>
+
 
                         </div>
                     </div>

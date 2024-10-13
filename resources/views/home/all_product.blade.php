@@ -76,17 +76,11 @@
                 @endif
 
                 <div class="custom-btn">
-                    <div class="btn-11"><a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy Now</a></div>
-                    <div class="btn-11"></div>
+                    <div class="btn-11"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a></div>
                 </div>
 
-                {{-- <button class="btn-17">
-                    <span class="text-container">
-                      <span class="text">
-                        <a href="{{ route('home.product_details', $product->id) }}" class="option1">Buy Now</a>
-                      </span>
-                    </span>
-                  </button> --}}
+                    <div class="btn-my"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a></div>
+
 
                     </div>
                   </div>

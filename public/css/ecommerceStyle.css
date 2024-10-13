@@ -144,7 +144,8 @@ body {
 	position: relative;
 	width: 280px;
 	height: 400px;
-	margin: 15px;
+	margin-left: 10px;
+  margin-top: 20px;
 	box-shadow: 0 2px 20px rgba(6, 95, 70, 0.5);
 	transition: box-shadow 0.3s ease;
 	overflow: hidden;
@@ -248,6 +249,7 @@ body {
 .header-icon a img {
     width: 80px;
     height: auto;
+    margin-left: 10px;
 }
 
 .header-icon a img:hover{
@@ -270,6 +272,7 @@ body {
 .header-menu ul li{
     list-style: none;
     padding: 18px 0px;
+    margin-right: 10px;
 }
 
 .header-menu ul li:hover{
@@ -889,7 +892,7 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 454px;
+	width: 460px;
 	height: 80px;
 	margin: 0;
 	display: flex;
@@ -1052,7 +1055,8 @@ body {
   .two{
     border: none;
     border-radius: 4px;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+    /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48); */
+
     overflow: hidden;
     padding: 8px 22px 10px 46px;
     font-size: 18px;
@@ -1066,6 +1070,10 @@ body {
   }
   .two:hover{
     background-position: 0% 30%;
+    text-shadow: 0 0 2px rgb(255, 0, 0),
+    0 0 1px red,
+    0 0 1px red,
+    0 0 1px red;
   }
   .two:hover:after {
     right: -40px;
@@ -1824,6 +1832,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 
+
 .new_footer_top .footer_bg {
     position: absolute;
     bottom: 0;
@@ -2046,10 +2055,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /* btn-me */
 
 .btn-my {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   font-family: Montserrat, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
   letter-spacing: 1px;
+  color: white;
   line-height: 19.5px;
   text-decoration: none solid rgb(255, 255, 255);
   background-attachment: scroll;
@@ -2057,9 +2070,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   background-image: none;
   background-position: 0% 0%;
   background-repeat: repeat;
-  color: rgb(255, 255, 255);
+  color: rgb(240, 255, 197);
   height: 35px;
-  width: 160px;
+  width: 150px;
   border-top: 1.11111px solid rgba(255, 255, 255, 0.1);
   border-right: 0px none rgb(255, 255, 255);
   border-bottom: 1.11111px solid rgba(255, 255, 255, 0.1);
@@ -2097,6 +2110,12 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin: 0 auto;
 }
 
+.btn-my a{
+  color: rgb(255, 255, 139);
+  text-shadow: 0 0 5px,
+                0 0 50px
+                ;
+}
 
 
 /* Checkout another style cart ar morde ache/ start */
@@ -2259,7 +2278,8 @@ review slider end */
 	position: relative;
 	width: 220px;
 	height: 400px;
-	margin: 15px;
+  margin-left: 10px;
+	margin-top: 20px;
 	box-shadow: 0 2px 20px rgba(6, 95, 70, 0.5);
 	transition: box-shadow 0.3s ease;
 	overflow: hidden;
@@ -2337,10 +2357,21 @@ review slider end */
   color: #006b39;
 }
 
+.info-menu h3 a{
+  color: #006b39;
+}
+
 
 .info-menu h4{
   font-size: 17px;
   text-align: center;
   color: #c60000;
   font-weight: 700;
+}
+
+
+
+.fa-solid, .fas {
+  font-weight: 900;
+  padding: 0 8px 0 0;
 }

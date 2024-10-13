@@ -31,32 +31,33 @@
                     <i class="fa-solid fa-circle-info"></i> Information
                     </h2>
                         <div class="containers-btn">
-                            <a href="{{ route('home.coupleProduct') }}">
+                            <a href="{{ route('home.howToOrder') }}">
                                 <span>How To Order?</span>
                             </a>
                         </div>
                         <div class="containers-btn">
-                            <a href="{{ route('home.coupleProduct') }}">
+                            <a href="{{ route('home.deliveryDhakaCity') }}">
                                 <span>Inside Dhaka City <br> Delivery System</span>
                             </a>
                         </div>
                         <div class="containers-btn">
-                            <a href="{{ route('home.coupleProduct') }}">
+                            <a href="{{ route('home.deliveryOutsideDhaka') }}">
                                 <span>Outside Dhaka City <br> Delivery System</span>
                             </a>
                         </div>
                         <div class="containers-btn">
-                            <a href="{{ route('home.coupleProduct') }}">
+                            <a href="{{ route('home.paymentMethod') }}">
                                 <span>Payment Method</span>
                             </a>
                         </div>
 
                         <h2><i class="fa-regular fa-circle-question"></i> Feel Free Ask Any Question</h2>
                         <h3>
-                            <i class="fa-solid fa-phone"></i> 01627-005005
+                            <i class="fa-solid fa-phone"></i> <a href="tel:+8801627005005">01627-005005</a>
+
                         </h3>
                         <h3>
-                            <i class="fa-solid fa-phone"></i> 017249-38377
+                        <i class="fa-solid fa-phone"></i> <a href="tel:+8801724938377">017249-38377</a>
                         </h3>
                 </div>
             </div>

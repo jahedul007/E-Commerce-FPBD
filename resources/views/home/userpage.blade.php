@@ -33,7 +33,7 @@
                 </a>
             </div>
             @foreach ($products_couple as $product)
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-lg-2 col-md-3 col-sm-2">
                 <div class="single-cards">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img
@@ -71,10 +71,11 @@
                         @endif
 
                         <div class="custom-btn">
-                            <div class="btn-10"><a href="{{ route('home.product_details', $product->id) }}"
-                                    class="option1">Buy Now</a></div>
-                            <!-- <div class="btn-10"></div> -->
-                        </div>
+                    <div class="btn-10"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a></div>
+                </div>
+
+                    <div class="btn-my"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a></div>
+
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@
             </div>
 
             @foreach ($products_girls as $product)
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-lg-2 col-md-3">
                 <div class="single-cards">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img
@@ -144,10 +145,11 @@
                         <h6 class="price-original">TK {{ $product->price }}</h6>
                         @endif
                         <div class="custom-btn">
-                            <div class="btn-10"><a href="{{ route('home.product_details', $product->id) }}"
-                                    class="option1">Buy Now</a></div>
-                            <!-- <div class="btn-10"></div> -->
-                        </div>
+                    <div class="btn-10"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a></div>
+                </div>
+
+                    <div class="btn-my"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a></div>
+
                     </div>
                 </div>
             </div>
@@ -180,7 +182,7 @@
                 </a>
             </div>
             @foreach ($products_mens as $product)
-            <div class="col-6 col-md-2">
+            <div class="col-6 col-lg-2 col-md-3">
                 <div class="single-cards">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img
@@ -217,10 +219,11 @@
                         <h6 class="price-original">TK {{ $product->price }}</h6>
                         @endif
                         <div class="custom-btn">
-                            <div class="btn-10"><a href="{{ route('home.product_details', $product->id) }}"
-                                    class="option1">Buy Now</a></div>
-                            <!-- <div class="btn-10"></div> -->
-                        </div>
+                    <div class="btn-10"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a></div>
+                </div>
+
+                    <div class="btn-my"><a href="{{ route('home.product_details', $product->id) }}" class="option1"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a></div>
+
                     </div>
                 </div>
             </div>
