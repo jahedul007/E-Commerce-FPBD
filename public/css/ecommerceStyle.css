@@ -2111,7 +2111,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .btn-my a{
-  color: rgb(255, 255, 139);
+  color: rgb(65, 255, 255);
   text-shadow: 0 0 5px,
                 0 0 50px
                 ;
@@ -2375,3 +2375,10 @@ review slider end */
   font-weight: 900;
   padding: 0 8px 0 0;
 }
+
+
+
+
+
+
+
