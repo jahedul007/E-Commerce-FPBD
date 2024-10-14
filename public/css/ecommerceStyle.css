@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+
 ul{
  margin: 0;
  padding: 0;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Oswald', sans-serif;
+  /* background: linear-gradient(to right, rgb(200, 255, 239), rgb(249, 251, 195), rgb(205, 255, 241)); */
+  /* background: #b71b1b; */
 }
 
 /* Header & menu all part here */
@@ -25,7 +31,7 @@ body {
     color: rgb(6 95 70);
     font-size: 19px;
     font-weight: 600;
-    /* margin-left: 4px; */
+    /* margin-right: 15px; */
 }
 
 .icon span{
@@ -37,6 +43,7 @@ body {
 .icon-area {
 	display: flex;
     justify-content: end;
+    margin-right: 15px;
 }
 .icon-area .icon a {
     width: 40px;
@@ -243,7 +250,7 @@ body {
 
 
 .header {
-    background-color: rgb(255, 207, 207);
+  background: linear-gradient(to right, rgb(200, 255, 239), rgb(252, 255, 179), rgb(205, 255, 241));
 }
 
 .header-icon a img {
@@ -285,7 +292,6 @@ body {
 
 
 .header-menu ul li a{
-    /* font-family: "Fredoka"; */
     text-decoration: none;
     color: rgb(6 95 70);
     font-size: 12px;
@@ -294,8 +300,6 @@ body {
 
 .header-menu ul li a:hover{
     font-weight: 600;
-    /* color: rgba(255, 255, 255, 0.2); */
-    /* font-weight: 800; */
 }
 
 
@@ -342,6 +346,7 @@ body {
   }
 
   .menu a {
+    font-family: 'Oswald', sans-serif;
     text-decoration: none;
     color: inherit;
     font-family: inherit;
@@ -1689,7 +1694,7 @@ body {
 
 
 .new_footer_area_part1 {
-background-color: #ecfbff;
+/* background-color: #ecfbff; */
 padding-top: 40px;
 }
 
@@ -2134,7 +2139,7 @@ review slider strat */
     align-items: center;
     justify-content: center;
      margin-top: 35px;
-     background: #f1f4fd;
+     /* background: #f1f4fd; */
   }
 
 
@@ -2379,6 +2384,192 @@ review slider end */
 
 
 
+/* dark mode  */
+
+
+
+
+:root {
+  --bg-color-light: white;
+  --text-color-light: black;
+  --bg-color-dark: #000000;
+  --text-color-dark: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+  .header, .header-area, .header-menu ul, .mobile-menu, .submenu, .submenu-item, .navbar, .bodys {
+    /* background-color: var(--bg-color-light); */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+body.dark-mode .header, 
+body.dark-mode .header-area, 
+body.dark-mode .header-menu ul, 
+body.dark-mode .mobile-menu, 
+body.dark-mode .submenu, 
+body.dark-mode .submenu-item, 
+body.dark-mode .navbar {
+  background-color: var(--bg-color-dark);
+}
+
+h1.dark-mode {
+  color:white;
+}
+/* Button */
+/* button#theme-toggle {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  padding: 10px;
+  border: 2px solid var(--text-color-light);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50px;
+} */
+
+body.dark-mode button#theme-toggle {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+  border: 2px solid var(--text-color-dark);
+}
+
+
+
+
+
+/* btn dark mode  */
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+#checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(99, 99, 99);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+  border: 2px solid rgb(126, 126, 126);
+  box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+}
+
+.svg {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg path {
+  fill: rgb(37, 37, 37);
+}
+
+#checkbox:checked + .switch .svg {
+  filter: drop-shadow(0px 0px 3px rgb(222, 151, 255));
+}
+
+#checkbox:checked + .switch .svg path {
+  fill: rgb(255, 255, 255);
+}
+
+#checkbox:checked + .switch {
+  box-shadow: 0px 0px 1px rgb(222, 151, 255) inset,
+      0px 0px 2px rgb(222, 151, 255) inset,
+      0px 0px 10px rgb(222, 151, 255) inset,
+      0px 0px 40px rgb(222, 151, 255),
+      0px 0px 100px rgb(222, 151, 255),
+      0px 0px 5px rgb(222, 151, 255);
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(152, 107, 172);
+  color: rgb(255, 255, 255);
+}
+  
+
+
+#checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: 4px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+  box-shadow: 8px 10px 10px rgb(0, 0, 0, .15);
+}
+
+.svg {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg path {
+  fill: rgb(37, 37, 37);
+}
+
+#checkbox:checked + .switch .svg {
+  filter: drop-shadow(0px 0px 3px rgb(222, 151, 255));
+}
+
+#checkbox:checked + .switch .svg path {
+  fill: rgb(255, 255, 255);
+}
+
+#checkbox:checked + .switch {
+  box-shadow: 0px 0px 1px rgb(222, 151, 255) inset,
+      0px 0px 2px rgb(222, 151, 255) inset,
+      0px 0px 10px rgb(222, 151, 255) inset,
+      0px 0px 40px rgb(222, 151, 255),
+      0px 0px 100px rgb(222, 151, 255),
+      0px 0px 5px rgb(222, 151, 255);
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(152, 107, 172);
+  color: rgb(255, 255, 255);
+}
 
 
 

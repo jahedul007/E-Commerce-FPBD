@@ -33,7 +33,7 @@
                 </a>
             </div>
             @foreach ($products_couple as $product)
-            <div class="col-6 col-lg-2 col-md-3 col-sm-2">
+            <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <div class="single-cards">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img
@@ -108,7 +108,7 @@
             </div>
 
             @foreach ($products_girls as $product)
-            <div class="col-6 col-lg-2 col-md-3">
+            <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <div class="single-cards">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img
@@ -182,7 +182,7 @@
                 </a>
             </div>
             @foreach ($products_mens as $product)
-            <div class="col-6 col-lg-2 col-md-3">
+            <div class="col-6 col-xl-2 col-lg-3 col-md-3">
                 <div class="single-cards">
                     <div class="img-area">
                         <a href="{{ route('home.product_details', $product->id) }}"><img

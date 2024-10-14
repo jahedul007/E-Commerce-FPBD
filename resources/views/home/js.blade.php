@@ -120,3 +120,98 @@
         }
     });
 </script>
+
+
+<!-- drak mode  -->
+
+<script>
+    // Get the toggle button and the body element
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check if dark mode is already set in local storage
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleButton.textContent = 'Switch to Light Mode';
+    }
+
+    // Add click event listener to toggle dark mode
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+
+      // Update button text based on the current mode
+      if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Switch to Light Mode';
+        toggleButton.style = 'box-shadow: 0px 0px 1px rgb(222, 151, 255) inset,
+      0px 0px 2px rgb(222, 151, 255) inset,
+      0px 0px 10px rgb(222, 151, 255) inset,
+      0px 0px 40px rgb(222, 151, 255),
+      0px 0px 100px rgb(222, 151, 255),
+      0px 0px 5px rgb(222, 151, 255);
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(152, 107, 172);
+  color: rgb(255, 255, 255);'
+        localStorage.setItem('theme', 'dark'); // Save preference in local storage
+      } else {
+        toggleButton.textContent = 'Switch to Dark Mode';
+        localStorage.setItem('theme', 'light'); // Save preference in local storage
+      }
+    });
+  </script>
+
+  <script>
+    document.getElementById('checkbox').addEventListener('change', function() {
+    if (this.checked) {
+        // Code for when the checkbox is checked (dark theme)
+        document.body.style.backgroundColor = '#121212'; // Example of changing to dark theme
+        document.body.style.color = '#ffffff'; // Text color for dark theme
+    } else {
+        // Code for when the checkbox is unchecked (light theme)
+        document.body.style.backgroundColor = '#ffffff'; // Example of changing to light theme
+        document.body.style.color = '#000000'; // Text color for light theme
+    }
+});
+
+  </script>
+
+
+<script>
+    // Get the toggle button and checkbox
+const toggleButton = document.getElementById('checkbox');
+
+// Function to apply the theme based on localStorage
+function applyTheme(theme) {
+  if (theme === 'dark') {
+    document.body.classList.add('dark-mode');
+    document.body.classList.remove('light-mode');
+    toggleButton.checked = true; // Reflect the dark mode on the toggle button
+  } else {
+    document.body.classList.add('light-mode');
+    document.body.classList.remove('dark-mode');
+    toggleButton.checked = false; // Reflect the light mode on the toggle button
+  }
+}
+
+// Check the stored theme preference on page load
+const storedTheme = localStorage.getItem('theme');
+if (storedTheme) {
+  applyTheme(storedTheme);
+} else {
+  // Default to light mode if no preference is saved
+  applyTheme('light');
+}
+
+// Listen for changes on the toggle button
+toggleButton.addEventListener('change', function () {
+  if (this.checked) {
+    // Dark mode is activated
+    localStorage.setItem('theme', 'dark'); // Save preference in local storage
+    applyTheme('dark');
+  } else {
+    // Light mode is activated
+    localStorage.setItem('theme', 'light'); // Save preference in local storage
+    applyTheme('light');
+  }
+});
+
+</script>

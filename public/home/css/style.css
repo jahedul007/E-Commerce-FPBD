@@ -111,7 +111,7 @@ a:focus {
 .hero_area {
   position: relative;
   /* min-height: 100vh; */
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,15 +998,13 @@ a:focus {
   }
 
   /* footer section*/
-  .footer_section {
-    background-color: #002c3e;
-    color: #ffffff;
-    padding-top: 70px;
-  }
+
 
   .footer_section {
       color: #ffffff;
       text-align: left;
+      background-color: #002c3e;
+      padding-top: 70px;
   }
 
   .footer_section h4 {

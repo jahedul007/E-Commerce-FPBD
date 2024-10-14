@@ -81,7 +81,7 @@ class HomeController extends Controller
         $viewBag['products_mens'] = Product::whereIn('category', $categories)->paginate(5);
         $categories = ["Girl's Bracelet", "Girl's Locket", "Girl's Ring","Girl's Watch","Girl's Anklet","Girl's Earring"];
         $viewBag['products_girls'] = Product::whereIn('category', $categories)->paginate(5);
-
+        // $viewBag['cart_count'] = Cart::withCount()->get();
 
         // $viewBag['comment'] = Comment::latest()->get();
         // $viewBag['reply'] = Reply::latest()->get();
