@@ -125,7 +125,7 @@
                 </div>
             </div>
 
-
+{{-- 
             <div class="text-center">
                 <br>
                 <h1>Proceed to Order</h1>
@@ -135,7 +135,7 @@
                     <button type="submit" class="btn btn-outline-danger">Cash On Delivery</button>
                 </form>
                 <a href="" class="btn btn-outline-danger">Pay Using Bkash/ Nagad/ Rocket</a>
-            </div>
+            </div> --}}
 
 
 

@@ -37,7 +37,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Name <br> <br> Phone <br><br>Email</th>
-                                    <th scope="col">Address</th>
+                                    <th scope="col">Address <br><br>Thana <br><br> district</th>
                                     <th>Date & Time</th>
                                     <th scope="col">Product Title</th>
                                     <th scope="col">Quantity <br> <br>Product Code</th>

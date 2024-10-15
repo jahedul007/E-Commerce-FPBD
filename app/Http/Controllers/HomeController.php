@@ -214,6 +214,8 @@ public function show_cart()
                 $order->email = $request->input('email') ?? null;
                 $order->phone = $request->input('mobile');
                 $order->address = $request->input('address');
+                $order->thana = $request->input('thana');
+                $order->district = $request->input('district');
                 $order->user_id = Auth::id() ?? null; // Null for guests
     
                 $order->product_title = $product['product_title'];
