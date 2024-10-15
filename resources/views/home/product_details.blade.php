@@ -39,6 +39,9 @@
                         <span class="heading-secondarys">Product Category: {{ $products->category }}</span>
                         <h1 class="heading-primary"> {{ $products->title }}</h1>
                         <p class="description">
+                            Product Code :{{ $products->product_code }}
+                        </p>
+                        <p class="description">
                             Product Details :{{ $products->description }}
                         </p>
                         <h6 class="description">Available :{{ $products->quantity }}</h6>

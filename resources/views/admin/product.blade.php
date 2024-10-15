@@ -34,6 +34,7 @@
                         <label for="">Product Title :</label>
                         <input type="text" class="text-success font-semibold form-control rounded" name="title" placeholder="Write a title">
                     </div>
+                    
 
                     <div class="mt-3">
                         <label for="">Product Code :</label>

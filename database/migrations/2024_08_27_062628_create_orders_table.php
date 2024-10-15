@@ -23,11 +23,14 @@ return new class extends Migration
 
 
             $table->string('product_title')->nullable();
+            $table->string('product_code')->nullable();
             $table->string('quantity')->nullable();
             $table->string('price', 8, 2)->nullable();
             $table->string('total_price', 8, 2)->nullable();
             $table->string('delivery_charge', 8, 2)->nullable()->default(0);
-            $table->string('image')->nullable();
+            // $table->string('image')->nullable();
+            $table->string('thana')->nullable();
+            $table->string('district')->nullable();
             $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
 
             $table->string('payment_status')->nullable();

@@ -24,11 +24,16 @@ class Order extends Model
         'phone',
         'address',
         'product_title',
+        'product_image',
         'price',
         'quantity',
         'payment_status',
         'delivery_status',
-        'product_id'
+        'product_id',
+        'thana',
+        'district',
+        'product_code'
+
     ];
 
     public function products(){

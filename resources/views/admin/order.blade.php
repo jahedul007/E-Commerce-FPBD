@@ -36,18 +36,15 @@
                         <table class="table table-success table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">Name <br> <br> Phone</th>
-                                    <th scope="col">Email</th>
+                                    <th scope="col">Name <br> <br> Phone <br><br>Email</th>
                                     <th scope="col">Address</th>
                                     <th>Date & Time</th>
                                     <th scope="col">Product Title</th>
-                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Quantity <br> <br>Product Code</th>
                                     <th scope="col">Price <br><br>Delivery Charge</th>
                                     <th scope="col">Payment Status <br> <br> Delivery Status</th>
                                     <th scope="col">Image</th>
-                                    <th>Delivered</th>
-                                    <th>PDF Download</th>
-                                    <th>Send Email</th>
+                                    <th>Delivered <br> <br>PDF Download <br> <br>Send Email</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -56,17 +53,18 @@
                                     <tr>
                                         <th>{{ $order->name }} <br><br>
 
-                                            {{ $order->mobile }}
+                                            {{ $order->phone }} <br> <br>
+
+                                            {{ $order->email }}
                                         </th>
-                                        <th>{{ $order->email }}</th>
                                         <th>
                                             {{ $order->address }} <br> <br>
-                                            {{ $order->thana }} <br>
+                                            {{ $order->thana }} <br> <br>
                                             {{ $order->district }}
                                         </th>
                                         <th>{{ $order->created_at }}</th>
                                         <th>{{ $order->product_title }}</th>
-                                        <th>{{ $order->quantity }}</th>
+                                        <th>{{ $order->quantity }} <br><br> {{$order->product_code}}</th>
                                         <th>
                                             {{ $order->price }} <br> <br>
                                             {{ $order->delivery_charge }}
@@ -77,7 +75,7 @@
                                         </th>
                                         <td>
                                             {{-- <img src="/product/{{ $order->image }}" alt=""> --}}
-                                            <img src="{{ asset('product/'.$order->image) }}" alt="">
+                                            <img src="{{ asset('product/'.$order->product_image) }}" alt="">
                                         </td>
                                         <td>
 
@@ -94,12 +92,13 @@
                                             <p>Delivered Compeleted</p>
 
                                             @endif
-                                        </td>
-                                        <td>
+
+                                            <br><br>
                                             <a href="{{ route('admin.pdf',$order->id) }}" class="btn btn-success">Download PDF</a>
-                                        </td>
-                                        <td>
+
+                                            <br><br>
                                             <a href="{{ route('admin.emailInfo',$order->id) }}" class="btn btn-info">Send Email</a>
+
                                         </td>
                                     </tr>
 
