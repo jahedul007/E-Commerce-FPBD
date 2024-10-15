@@ -980,6 +980,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  text-shadow: 0 0 1px cyan,
+  0 0 5px cyan;
 }
 .custom-btn .btn-11 a {
 	position: absolute;
@@ -1010,6 +1012,8 @@ body {
 .custom-btn .btn-11 a:hover {
     font-size: 15px;
     font-weight: 700;
+    text-shadow: 0 0 2px cyan,
+                  0 0 5px cyan;
 }
 
 
