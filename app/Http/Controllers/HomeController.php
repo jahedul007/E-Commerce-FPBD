@@ -81,11 +81,6 @@ class HomeController extends Controller
         $viewBag['products_mens'] = Product::whereIn('category', $categories)->paginate(5);
         $categories = ["Girl's Bracelet", "Girl's Locket", "Girl's Ring","Girl's Watch","Girl's Anklet","Girl's Earring"];
         $viewBag['products_girls'] = Product::whereIn('category', $categories)->paginate(5);
-        // $viewBag['cart_count'] = Cart::withCount()->get();
-
-        // $viewBag['comment'] = Comment::latest()->get();
-        // $viewBag['reply'] = Reply::latest()->get();
-
 
         return view('home.userpage', $viewBag);
     }
@@ -729,13 +724,6 @@ public function girlsProduct()
 }
 
 
-// public function slider()
-// {
-//     $viewBag['slider']= Slider::latest()->get();
-//     return view('home.slider', $viewBag);
-// }
-
-
 
 public function furniture()
 {
@@ -1176,16 +1164,6 @@ public function paymentMethod()
 {
     return view('home.paymentMethod');
 }
-
-
-
-// public function others()
-// {
-//     // Assuming you have a Product model and a 'furniture' category
-//     $products = Product::where('category', 'furniture')->paginate(10);
-
-//     return view('home.others', compact('products'));
-// }
 
 
 
