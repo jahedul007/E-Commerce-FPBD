@@ -543,15 +543,15 @@ body {
     margin-bottom: 15px;
     margin-top: 30px;
   }
-.heading-primary {
-  color: hsl(220, 13%, 13%);
-  font-size: 30px;
-  line-height: 1;
-  letter-spacing: 0.3px;
-  margin-bottom: 1rem;
-  margin-left: 50px;
-}
-
+  .heading-primary {
+    color: hsl(217.5, 10.7%, 29.4%);
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    margin-bottom: 1rem;
+    margin-left: 50px;
+    font-weight: 600;
+  }
 .description {
   color: hsl(219, 9%, 45%);
   font-size: 12px;
@@ -1626,8 +1626,9 @@ body {
 
 .product-item iframe{
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -1687,8 +1688,8 @@ body {
     font-size: 18px;
     color: rgb(6 95 70);
     text-align: center;
-    margin-bottom: 25px;
-    margin-top: 13px;
+    margin-bottom: 10px;
+    /* margin-top: 13px; */
     margin-left: -20px;
     font-weight: 700;
 }

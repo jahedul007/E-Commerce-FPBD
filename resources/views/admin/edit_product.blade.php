@@ -92,6 +92,13 @@
                         @endif
                     </div>
 
+                    <div class="mt-3">
+                        <label for="">youtube :</label>
+                        <input type="text" class="text-success font-semibold form-control rounded" name="youtube" placeholder="youtube" value="{{ $product->youtube }}">
+                        @if ($errors->has('youtube'))
+                            <span class="text-danger h6">{{ $errors->first('youtube') }}</span>
+                        @endif
+                    </div>
 
                     <div class="mt-3">
                         <label class="text-danger">Product Category :</label>
@@ -122,7 +129,7 @@
 
                     <div class="mt-3">
                         <label for="">Description Product Image :</label>
-                        <img src="/image/{{ $product->detailsImage }}" alt="" width="90" class="mx-auto">
+                        <img style="width: 100px;" src="/image/{{ $product->detailsImage }}" alt="" width="90" class="mx-auto">
                         @if ($errors->has('detailsImage'))
                             <span class="text-danger h6">{{ $errors->first('detailsImage') }}</span>
                         @endif
@@ -140,7 +147,7 @@
 
                     <div class="mt-3">
                         <label for="">Review Product Image :</label>
-                        <img src="/image/{{ $product->reviewImage }}" alt="" width="90" class="mx-auto">
+                        <img style="width: 100px;" src="/image/{{ $product->reviewImage }}" alt="" width="90" class="mx-auto">
                         @if ($errors->has('reviewImage'))
                             <span class="text-danger h6">{{ $errors->first('reviewImage') }}</span>
                         @endif

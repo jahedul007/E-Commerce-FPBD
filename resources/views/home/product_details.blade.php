@@ -67,8 +67,6 @@
 
 
                                 <div class="col-8 col-md-4">
-                                    {{-- <ion-icon name="cart-outline"></ion-icon>
-                                            <button class="add-cart">Add to cart</button> --}}
 
                                     <div class='btn-2'>
                                         <button class='two btn-2'> Add to <b>Cart</b></button>
@@ -79,9 +77,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" style="margin-bottom: 50px">
                 <div class="youtube-info">
-                    <span>Youtube Video Section</span>
+                    <span>Youtube Video</span>
                 </div>
                 <iframe src="https://www.youtube.com/embed/{{ $products->youtube }}" title="YouTube video player"
                     frameborder="0"

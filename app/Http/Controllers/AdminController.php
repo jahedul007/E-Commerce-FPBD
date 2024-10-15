@@ -211,21 +211,6 @@ class AdminController extends Controller
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public function show_product()
     {
         $product = Product::all();
@@ -264,6 +249,9 @@ class AdminController extends Controller
         $product->quantity = $request->quantity;
         $product->price = $request->price;
         $product->discount_price = $request->discount_price;
+
+        $product->youtube = $request->youtube;
+
 
 
         $product->save();
