@@ -1146,6 +1146,7 @@ public function furnitureParts()
 public function others()
 {
 
+    $category = "Others";
     // Fetch products for the "Couple's Ring" category and paginate them
     $viewBag['products'] = Product::where('category', $category)->paginate(8);
 

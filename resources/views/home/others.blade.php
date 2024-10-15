@@ -12,7 +12,7 @@
     <div class="row">
         <div class="heading_container heading_center">
             <h2>
-               All <span class="red">Products in One Place</span>
+               All Products in <span class="red">One Place</span>
             </h2>
          </div>
 
