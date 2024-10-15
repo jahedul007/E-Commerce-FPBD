@@ -202,61 +202,50 @@ public function show_cart()
 
     public function cash_order(Request $request)
     {
-        // dd($request->all());
         // Check if there are products in the request
         if ($request->has('products')) {
             $products = $request->input('products'); // Array of products
-
-            // Loop through each product to save the order
+    
             foreach ($products as $product) {
                 $order = new Order();
-
-                // Populate the order details
+    
+                // Populate order details
                 $order->name = $request->input('name');
                 $order->email = $request->input('email') ?? null;
-                $order->phone = $request->input('mobile'); // Phone field is named 'mobile' in the form
+                $order->phone = $request->input('mobile');
                 $order->address = $request->input('address');
                 $order->user_id = Auth::id() ?? null; // Null for guests
-
-                // Set product-specific details
+    
                 $order->product_title = $product['product_title'];
                 $order->price = $product['price'];
                 $order->quantity = $product['quantity'];
                 $order->product_id = $product['product_id'];
-
+    
                 $productModel = Product::find($product['product_id']);
-                if ($productModel) {
-                    $order->product_image = $productModel->image; // Assign the image from the product model
-                } else {
-                    $order->product_image = 'default-image.jpg'; // Fallback in case the product is not found
-                }
-                // deliver charge
+                $order->product_image = $productModel ? $productModel->image : 'default-image.jpg';
+    
                 $order->delivery_charge = $request->input('delivery_charge');
                 $order->total_price = $request->input('total_price');
-
-                // You can set default values for these fields or modify them as needed
-                $order->payment_status = 'pending'; // Default payment status
-                $order->delivery_status = 'processing'; // Default delivery status
-
-                // Save the order
+                $order->payment_status = 'pending';
+                $order->delivery_status = 'processing';
+    
                 $order->save();
             }
-
-            $data = Cart::all();
-            foreach ($data as $data){
-
-                $data->delete();
+    
+            // Remove cart items for authenticated user
+            if (Auth::check()) {
+                Cart::where('user_id', Auth::id())->delete();
+            } else {
+                // Clear guest cart session
+                session()->forget('home.show_cart');
             }
-
-            // Clear the cart session after processing the order
-            session()->flush('home.show_cart'); // This will remove the 'cart' session variable
-
-            // Redirect back with success message after saving all orders
+    
             return redirect()->route('home.show_order')->with('success', 'Order(s) created successfully.');
         } else {
             return redirect()->back()->with('error', 'No products found in the cart.');
         }
     }
+    
 
 
 
